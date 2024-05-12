@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    button{
+        margin-left: 150px;
+    }
+  </style>
+  <body>
+    <div style="margin-left: 300px; ">
+
+      <h2>Check the sum your no. is an even odd</h2>
+
+      <button onclick="evenOdd()">Check</button>
+    </div>
+    <script>
+      function evenOdd() {
+        let num1 = Number(prompt("Enter the First no."));
+        let num2 = Number(prompt("Enter the Second No. "));
+        let result = num1 + num2;
+
+        if (result % 2 == 0) {
+          alert(`The addition of ${num1} and ${num2} is even `);
+        } else {
+          alert(`The addition of ${num1} and ${num2} is odd `);
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average & percentage</title>
+</head>
+<body>
+    <script>
+        let sub1 = Number (prompt("Enter the marks for sub1"));
+        let sub2 = Number (prompt("Enter the marks for sub2"));
+        let sub3 = Number (prompt("Enter the marks for sub3"));
+        let outOf=300;
+        // calculating the total of the marks
+        let totalMarks = sub1+sub2+sub3;
+        let average = totalMarks/3;
+        let percentage = totalMarks/outOf*100
+        if(sub1<=100 && sub2<=100 && sub3<=100){
+            alert(`The average of your marks is ${average}`)
+            alert(`Percentage of your marks is ${percentage}%`)
+        }else{
+            alert("something went Wrong");
+        }
+    </script>
+</body>
+</html>

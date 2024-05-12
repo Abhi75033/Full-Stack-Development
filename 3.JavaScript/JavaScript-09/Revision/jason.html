@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj={
+            id:1,
+            Name:"Abhishek",
+            Email:"abhishek@gmail.com",
+            Address:{
+City:"Varanasi",
+Dist:"Chanduali",
+pinCode:232101,
+State:"Uttar Pradesh"
+            },
+            phone:['6394753801','6390688961']
+        }
+
+        let objjson= JSON.stringify(obj)
+        console.log(objjson)
+
+        let objson=JSON.parse(objjson)
+        console.log(obj)
+    </script>
+</body>
+</html>

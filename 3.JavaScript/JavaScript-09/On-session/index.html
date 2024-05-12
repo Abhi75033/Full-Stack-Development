@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let student={
+            id:1,
+            Name:"Abhishek",
+            Email:"abhishek@gmail.com",
+            phone:['6394753801','6390688961']
+        }
+        console.log(student.phone[1])
+
+        const studentJson= JSON.stringify(student)
+        console.log(studentJson);
+
+        console.log(JSON.parse(studentJson))
+    </script>
+</body>
+</html>

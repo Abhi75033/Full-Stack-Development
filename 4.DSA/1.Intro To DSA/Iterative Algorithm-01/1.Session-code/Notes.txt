@@ -1,0 +1,12 @@
+Itrative Algorithm 1
+---------------------->
+
+                                                         Searching Algorithm
+                                                       <---------------------->
+
+1.Linear Search 
+
+The linear Search is simple Search to find any elemnt in aaray or any other dtatype
+
+
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let obj = {
+            Name: 'Abhishek',
+            City:'Mughal sarai',
+            Email:'abhishek@gmail.com',
+            country:'India',
+greet: function(){
+    console.log(`Welcome ${this.Name}`);
+}
+
+
+        }
+        obj.greet()
+        
+console.log('data',obj)
+        console.log('Name: '+obj.Name);
+        console.log('City: '+obj.City);
+        console.log('Email: '+obj.Email);
+        console.log('Country: '+obj.country)
+
+        obj.Name='AK'
+        obj.Email='abhishekyadav@gmail.com'
+        console.log('--------------------------After updation------------------------------------------');
+        console.log('Name: '+obj.Name);
+        console.log('City: '+obj.City);
+        console.log('Email: '+obj.Email);
+        console.log('Country: '+obj.country)
+        console.log('Delete');
+        delete obj.country;
+        console.log('Country: '+obj.country)
+console.log('-------------------itarating--------------------------------------------');
+        for(let key in obj){
+            console.log(key+' : '+obj[key])
+        }
+
+        
+    </script>
+</body>
+
+</html>

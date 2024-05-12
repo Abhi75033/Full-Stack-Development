@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function pythagores() {
+        let pytha = prompt(
+          "Enter P to calculate Perpendicular, H for hypotenues, B base"
+        );
+        switch (pytha) {
+          case "P":
+            let hypotenues1 = Number(prompt("Enter the Hypotenues"));
+            let base1 = Number(prompt("Enter the Base"));
+            let result1 =  (hypotenues1*hypotenues1)-(base1*base1);
+            let Square = Math.sqrt(result1)
+            alert("The perpendicular of your triangle is " + Square);
+            break;
+
+          case "H":
+            let perpendicular1 = Number(prompt("Enter the Perpendicular"));
+            let base2 = Number(prompt("Enter the Base"));
+            let result2 = (perpendicular1*perpendicular1) + (base2*base2);
+            let Square2 =Math.sqrt(result2);
+            alert("The hypotenues of your triangle is " + Square2);
+            break;
+
+          case "B":
+            let perpendicular2 = Number(prompt("Enter the Hypotenues"));
+            let Hypotenues1 = Number(prompt("Enter the Perpendicular"));
+            let result3 = (Hypotenues1*Hypotenues1)-(perpendicular2*perpendicular2);
+            let Square3 = Math.sqrt(result3)
+            alert(`The base of your triangle is ${Square3} `)
+            break;
+        }
+      }
+      pythagores();
+    </script>
+  </body>
+</html>

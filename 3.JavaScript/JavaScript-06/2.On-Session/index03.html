@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     let person={
+        Name:"Abhishek",
+        Email:"abhishek@gmail.com",
+
+        Greet:function(){
+console.log(`Welcome ${this.Name}`)
+        },
+        Display:function(marks){
+            console.log(` ${this.Name}`)
+            console.log(` ${this.Email}`)
+            console.log(marks);
+
+        }
+    } 
+    
+    person.Greet()
+    person.Display(230)
+    </script>
+</body>
+</html>

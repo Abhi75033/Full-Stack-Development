@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj={
+            Name:'Abhishek',
+            Slogan:'leraning is the best earning',
+            position: 'Full Stack Devloper',
+        }
+        // dstuructring or storing the every value in a variable
+        const{Name,Slogan,position}=obj
+        // every value sotred in a varibles
+        console.log(Name,Slogan,position);
+
+        //if we want to store any object key and print so we can do that
+        const{position:post}=obj
+        //storing the value of position inside the post variable
+        console.log(post);
+    </script>
+</body>
+</html>

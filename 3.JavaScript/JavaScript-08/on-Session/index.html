@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <SCript>
+        let array=[
+            [1,2,3],
+            [4,5,6,7,8],
+            [1,1,1,1]
+        ]
+
+        for(let row =0; row<array.length; row++){
+            for(let col =0; col<array[row].length; col++){
+                document.write(array[row][col]+`&nbsp; `)
+            }
+            document.write(`</br>`)
+        }
+document.write("</br>")
+
+        for(let row of array){
+            for(let col of row){
+                document.write(col+"       ")
+            }
+            document.write("</br>")
+        }
+    </SCript>
+</body>
+</html>

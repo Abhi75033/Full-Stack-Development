@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1></h1>
+     <h1 class="id"></h1>
+     <h1 id="class"></h1>
+     <h2></h2>
+     <h2></h2>
+     <h2></h2>
+
+     <script>
+        document.querySelector('h1').innerHTML="Skill Acadmy";
+        document.querySelector(".id").innerHTML="From class"
+        document.querySelector("#class").innerHTML="Fom Id"
+
+        document.write("<h1> QuerySlctorAll </h1>")
+
+        const element =document.querySelectorAll("h2");
+        console.log(element)
+        for(let ele of element){
+            ele.innerHTML="Welcome to skill Acadmy"
+        }
+     </script>
+</body>
+</html>

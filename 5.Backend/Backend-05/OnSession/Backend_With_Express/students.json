@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "cgpa": 8.3
+    },
+    {
+        "id": 2,
+        "name": "catty Doe",
+        "cgpa": 7.2
+    },
+    {
+        "id": 3,
+        "name": "John Doe",
+        "cgpa": 9.5
+    },
+    {
+        "id": 4,
+        "name": "tom jack",
+        "cgpa": 5.3
+    },
+    {
+        "id": 5,
+        "name": "Jane Smith",
+        "cgpa": 10
+    },
+    {
+        "id": 6,
+        "name": "Alex Johnson",
+        "cgpa": 10
+    },
+    {
+        "id": 7,
+        "name": "Emily Brown",
+        "cgpa": 9.1
+    },
+    {
+        "id": 8,
+        "name": "Michael Davis",
+        "cgpa": 6.8
+    },
+    {
+        "id": 9,
+        "name": "Sophia Wilson",
+        "cgpa": 8.2
+    },
+    {
+        "id": 10,
+        "name": "Daniel Thompson",
+        "cgpa": 7.5
+    },
+    {
+        "id": 11,
+        "name": "Olivia Martinez",
+        "cgpa": 9.3
+    },
+    {
+        "id": 12,
+        "name": "William Anderson",
+        "cgpa": 6.4
+    },
+    {
+        "id": 13,
+        "name": "Ava Taylor",
+        "cgpa": 8.9
+    },
+    {
+        "id": 14,
+        "name": "James Harris",
+        "cgpa": 7.7
+    }
+]

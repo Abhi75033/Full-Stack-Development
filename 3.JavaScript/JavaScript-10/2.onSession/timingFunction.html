@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="num"></h1>
+    <script>
+        setTimeout(function(){
+            console.log("This is my Delayed Function")
+
+        },2000)
+
+        let count =0;
+        const Number= Setiterval(() => {
+            document.getElementById('num').innerHTML=count;
+            count++;
+
+            if(count>5){
+                clearInterval(Number)
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

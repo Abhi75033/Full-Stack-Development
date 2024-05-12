@@ -1,0 +1,28 @@
+[
+    {
+        "name":"Burger",
+        "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZqjXV1eugoS7qrHViQKJMakbZOrrGVgVVyA&s",
+        "price":499
+    },
+    {
+        "name":"French Fries",
+        "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf38vZwTzlA6BVYu-Ady95Mh3PB87o0eFeDQ&s",
+        "price":299
+    },
+    {
+        "name":"Coca Cola",
+        "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXs1xJuzAtRNsMVO_WawDL268b6ejDM7vO0Q&s",
+        "price":99
+    },
+    {
+        "name":"Pepsi",
+        "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_quYPIzCPzTcG711HUdwYi7Tkq81AAWStOg&s",
+        "price":99
+    },
+    {
+        "name":"Pizza",
+        "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSapR4uJh774LI5QJJ6AxBfYlSKYVvlu1A-oQ&s",
+        "price":99
+    }
+
+]

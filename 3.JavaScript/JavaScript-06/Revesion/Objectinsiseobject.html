@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user={
+            Nanme:'Abhishek',
+            Email:'abhishek@gmail.com',
+            Address:{
+                Street:'xyz street',
+                city:'Varansi',
+                state:'Uttar Pradesh',
+                Country:'India'
+            },
+            Department:{
+                Batch:2023,
+                DateofStarting:'5-08-2023',
+                EndDate:'23-07-2024',
+                Modules:{
+                    Moudule1:'Complted',
+                    Moudule2:'Not Complted'
+                }
+            }
+        }
+
+        console.log(user);
+        console.log(user.Address.city);
+        console.log(user.Department.DateofStarting+' to ' +user.Department.EndDate);
+
+        // we can access lke this as well
+
+        const{Address:{Street,city},Department:{DateofStarting,EndDate,Modules:{Moudule1,Moudule2}}}=user;
+        console.log(Street,city,DateofStarting,EndDate,Moudule1,Moudule2);
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+ [
+    {
+        "name":"Pencil",
+        "price":10.0,
+        "description":"This is a pencil"
+    },
+    {
+        "name":"Pen",
+        "price":20.0,
+        "description":"This is a pen"
+    },
+    {
+        "name":"Eraser",
+        "price":5.0,
+        "description":"This is an eraser"
+    },
+    {
+        "name":"Sharpener",
+        "price":15.0,
+        "description":"This is a sharpener"
+    },
+    {
+        "name":"Ruler",
+        "price":25.0,
+        "description":"This is a ruler"
+    },
+    {
+        "name":"Iphone",
+        "price":78569.0,
+        "description":"This is an iphone"
+    }
+]
+

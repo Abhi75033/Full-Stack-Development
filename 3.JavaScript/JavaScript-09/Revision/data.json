@@ -1,0 +1,29 @@
+{
+    "user": [
+        {
+            "id": 1,
+            "Name":"Abhishek",
+            "Email":"abhishek@gmail.com",
+            "Country":"India"
+        },
+        {
+            "id": 2,
+            "Name":"Abhi",
+            "Email":"abhi@gmail.com",
+            "Country":"US"
+        },
+        {
+            "id": 1,
+            "Name":"Tom",
+            "Email":"Tom@gmail.com",
+            "Country":"Canada"
+        }
+    ],
+    "post":[
+        {
+            "id":2,
+            "User_id":365,
+            "post":"Learning Jason "
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Employee(id,Name,Email){
+            this.id-id;
+            this.Name=Name
+            this.Email=Email
+        }
+
+        Employee.prototype.display=function(){
+            console.log(this.id)
+            console.log(this.Name)
+            console.log(this.Email)
+        }
+
+        let e1 =new Employee('E0001','Abhishek','abhishekyadav@gmail.com')
+        let e2 =new Employee('E0002','Abhay','abhay@gmail.com')
+        let e3 =new Employee('E0003','Anjali','anjaliy@gmail.com')
+
+        console.log(e1,e2,e3);
+        e1.display()
+        e2.display()
+        e3.display()
+    </script>
+</body>
+</html>

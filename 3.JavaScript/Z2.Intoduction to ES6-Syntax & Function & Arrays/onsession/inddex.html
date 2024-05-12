@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="task" >
+    <button onclick="add()">Add Todo</button>
+    <br>
+    <h1>Todos List</h1>
+    <ul id="todo"></ul>
+    <script src="todos.js"></script>
+
+   <script>
+    const Mytodos= new Todo()
+    function add(){
+        const task = document.getElementById('task');
+        Mytodos.addTodo(task.value)
+        task.value='';
+       
+        display()
+    }
+
+    function display(){
+        const all = Mytodos.getAllTodos()
+     let data='';
+     for(let t of all){
+        data+= `<li> ${t.name} <button onclick="remove()">X</button> </li>`
+     }
+     document.getElementById('todo').innerHTML=data
+    }
+
+    function remove(id){
+Mytodos.removeTodo(id);
+display();
+    }
+    
+   </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+ [
+    {
+        "name": "John Doe","email": "john.doe@example.com","country": "USA","age": 20
+    },
+    {
+        "name": "Jane Smith","email": "jane.smith@example.com","country": "UK","age": 22
+    },
+
+    {
+        "name": "joe Smith","email": "joe.smith@example.com","country": "UK","age": 26
+    },
+    {
+        "name": "catty ","email": "catty@example.com","country": "Brazil","age": 40
+    },
+    {
+        "name": "tom ","email": "tom@example.com","country": "SA","age": 34
+    },
+    {
+        "name": "Abhi ","email": "Abhi@example.com","country": "India","age": 23
+    },{
+        "name": "Abhay ","email": "Abhay@example.com","country": "India","age": 18
+    }
+
+ ]

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="Head1"></h1>
+    <h2 id="head2"></h2>
+    <button onclick="show()">Show</button>
+    <button onclick="hide()">Hide</button>
+    <script>
+        function show(){
+            document.getElementById("Head1").innerHTML="Skill Academy"
+            document.getElementById("head2").innerHTML="Learning is the best way of Earning"
+        }
+
+        function hide(){
+            document.getElementById("Head1").innerText=" "
+            document.getElementById("head2").innerText=" "
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+[
+    {
+        "id":1,
+        "name":"Pencil",
+        "ImageUrl":"https://media.istockphoto.com/id/1216610305/vector/pencil-icon-eraser-pen-flat-design-and-back-to-school-concept-on-white-background.jpg?s=612x612&w=0&k=20&c=mICIEriPcqGMPydZM1_gayHn4vuUK2KydQ8iygXFG7w=",
+        "Price":10
+    },
+    {
+        "id":2,
+        "name":"Pen",
+        "ImageUrl":"https://rukminim2.flixcart.com/image/850/1000/kwb07m80/pencil-box/0/r/w/universal-3-in-1-stylus-pen-with-mobile-stand-holder-writing-pen-original-imag9ymsqkdhdepm.jpeg?q=90&crop=false",
+        "Price":15
+    },
+    {
+        "id":3,
+        "name":"Kite",
+        "ImageUrl":"https://m.media-amazon.com/images/I/31eZw2vBNrS._AC_UF1000,1000_QL80_.jpg",
+        "Price":45
+    },
+    {
+        "id":4,
+        "name":"HeadPhone",
+        "ImageUrl":"https://m.media-amazon.com/images/I/61uPLz5lIBL._AC_UF350,350_QL80_DpWeblab_.jpg",
+        "Price":45000
+    }
+
+]

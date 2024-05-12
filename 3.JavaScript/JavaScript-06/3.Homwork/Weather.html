@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: yellow;
+        }
+        nav{
+            background-color: aqua;
+            height: 40px;
+            margin-top: -20px;
+        }
+td{
+    background-color: black;
+    color: white;
+}
+th{
+    background-color:black;
+    color: white;
+}
+.button{
+    margin-left: 810px;
+    margin-top: 2vh;
+}
+button{
+    padding: 10px 20px;
+    background-color: rgb(255, 94, 0);
+}
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1 style="text-align: center"> ☀️Weather Report☀️</h1>
+    </nav>
+
+    <div>
+      <table
+        border="1"
+        cellspacing="0"
+        cellpadding="10"
+        style="margin-left: 400px; margin-top: 10vh">
+        <thead>
+          <tr>
+            <th>City</th>
+            <th>Maxium Temprature</th>
+            <th>Minum Temprature</th>
+            <th>Humidity</th>
+            <th>Visiblity</th>
+          </tr>
+        </thead>
+        <tr>
+          <td id="city"></td>
+          <td id="max"></td>
+          <td id="min"></td>
+          <td id="Humi"></td>
+          <td id="Visi"></td>
+        </tr>
+      </table>
+    </div>
+<div class="button">
+    <button onclick="Display()">ChecK Again</button>
+</div>
+    <script>
+      function Weather(City, Max, Min, Humidity, Visiblity) {
+        this.City = City;
+        this.Max = Max;
+        this.Min =Min
+        this.Humidity = Humidity;
+        this.Visiblity = Visiblity;
+      }
+
+      let Mumbai = new Weather(
+        "Mumbai",
+        "35°",
+        "27°",
+        "60%",
+        " 1km"
+      );
+      let Delhi = new Weather("Delhi", "39°", "30°", "55%", " 1km");
+      let Banglore = new Weather(
+        "Banglore",
+        "30°",
+        "27°",
+        "65%",
+        " 1km"
+      );
+      let Lucknow = new Weather(
+        "Lucnow",
+        "36°",
+        "29°",
+        "63%",
+        " 1km"
+      );
+      let Varanasi = new Weather(
+        "Varanasi",
+        "37°",
+        "29°",
+        "78%",
+        " 1km"
+      );
+
+function Display(){
+    let Place = prompt("Enter the city code")
+let location1 ="Mumbai";
+let location2 ="Delhi";
+let location3 ="Banglore";
+let location4 ="Lucnow";
+let location5 ="Varanasi";
+
+if(Place==location1){
+    document.getElementById("city").innerHTML = (Mumbai.City);
+    document.getElementById("max").innerHTML = (Mumbai.Max);
+    document.getElementById("min").innerHTML = (Mumbai.Min);
+    document.getElementById("Humi").innerHTML = (Mumbai.Humidity);
+    document.getElementById("Visi").innerHTML = (Mumbai.Visiblity);
+
+}else if(Place == location2){
+    document.getElementById("city").innerHTML = (Delhi.City);
+    document.getElementById("max").innerHTML = ( Delhi.Max );
+    document.getElementById("min").innerHTML = (Delhi.Min);
+    document.getElementById("Humi").innerHTML = (Delhi.Humidity);
+    document.getElementById("Visi").innerHTML = (Delhi.Visiblity);
+}else if(Place==location3){
+    document.getElementById("city").innerHTML = (Banglore.City);
+    document.getElementById("max").innerHTML = ( Banglore.Max );
+    document.getElementById("min").innerHTML = (Banglore.Min);
+    document.getElementById("Humi").innerHTML = (Banglore.Humidity);
+    document.getElementById("Visi").innerHTML = (Banglore.Visiblity);
+}else if(Place==location4){
+    document.getElementById("city").innerHTML = (Lucknow.City);
+    document.getElementById("max").innerHTML = ( Lucknow.Max );
+    document.getElementById("min").innerHTML = (Lucknow.Min);
+    document.getElementById("Humi").innerHTML = (Lucknow.Humidity);
+    document.getElementById("Visi").innerHTML = (Lucknow.Visiblity);
+}else if(Place==location5){
+    document.getElementById("city").innerHTML = (Varanasi.City);
+    document.getElementById("max").innerHTML = ( Varanasi.Max );
+    document.getElementById("min").innerHTML = (Varanasi.Min);
+    document.getElementById("Humi").innerHTML = (Varanasi.Humidity);
+    document.getElementById("Visi").innerHTML = (Varanasi.Visiblity);
+}
+else{
+    alert("Something Went Wrong")
+}
+
+}
+// Display()
+    </script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+Synchronous code is executed in a single thread, meaning that each statement isexecuted one after 
+the other in the order they appear in the code. This means that the next statement
+cannot be executed until the previous statement has finished executing.
+
+
+Asynchronous code, on the other hand, does not have to be executed in a single thread.
+This means that multiple statements can be executed at the same time, and the next statement
+does not have to wait for the previous statement to finish executing.

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        background-image: url(https://gamethinking.io/wp-content/uploads/sites/5/2018/12/quiz-background.png);
+  
+        background-size: cover;
+    }
+   
+    .container div:nth-child(1){
+       margin-left: 200px;
+       margin-top: 100px;
+       color: #000000;
+    }
+table{
+    text-align: center;
+}
+   
+  </style>
+  <body>
+<nav style="height: 55px; background-color: black; color: #fff;">
+    <h1 style="text-align: center; font-size: 30px; padding-top: 10px;">Quiz</h1>
+</nav>
+<div class="container">
+    <div>
+        <table border="1" cellspacing="5" cellpadding="10" style=" background-color:#ffffff; font-size:  30px; border: 1px solid rgb(0, 0, 0);">
+            <th>S.no</th>
+            <th>Questions</th>
+           <th>Response</th>
+            <th>Result</th>
+            <tr>
+                <td>1</td>
+                <td>How many months in a year..?</td>
+                <td id="Response1"></td>
+                <td id="Result"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>How many planets in our solar system..?</td>
+                <td id="Response2"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>How amy Days in a week..?</td>
+                <td id="Response3"></td>
+                <td></td>
+            </tr
+        </table>
+    </div>
+</div>
+<!--------------------------------------------------------------------- -->
+    <script>
+        function Quiz(){
+
+  
+      let Questions = [];
+      Questions[0] = prompt("How many months in a year");
+    let Ans1 =12;
+      Questions[1] = prompt("How many planets in our solar system");
+    let Ans2= 8; 
+      Questions[2]= prompt("How amy Days in a week");
+    let Ans3 = 7;
+
+    let Pmarks = Number(2);
+    let Nmarks = Number(-1);
+    
+
+   for(let i =0; i<=Questions.length; i++){
+if(Questions[0]==Ans1){
+ document.getElementById("Response1").innerHTML = Pmarks
+}else
+ document.getElementById("Response1").innerHTML = Nmarks
+
+if(Questions[1]==Ans2){
+  document.getElementById("Response2").innerHTML = Pmarks
+}else
+document.getElementById("Response2").innerHTML = Nmarks
+   }
+
+   if(Questions[2]==Ans3){
+    document.getElementById("Response3").innerHTML = Pmarks
+}else
+document.getElementById("Response3").innerHTML = Nmarks
+}
+
+
+
+
+
+Quiz()
+     
+    </script>
+  </body>
+</html>

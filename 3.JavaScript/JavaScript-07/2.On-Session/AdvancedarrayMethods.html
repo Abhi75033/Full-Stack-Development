@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Actual arry
+        let array=[1,2,3,4,5,6,7,8,9,10]
+
+        // Map medthods:- which gives new array accroding our logic
+        const newArrray=array.map(function(values,index){
+            return values*3
+        })
+        console.log(newArrray)
+
+        // We can itrate the array using forEcah
+
+        array.forEach(function(values,index){
+            console.log(`Index: ${index} = values: ${values}`)
+        })
+
+        // filter method
+
+array.filter(function(values){
+            return values%2==0;
+        })
+        console.log(NewArray)
+    </script>
+</body>
+</html>

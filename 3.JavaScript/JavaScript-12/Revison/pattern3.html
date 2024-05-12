@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let phone = /[6789]{3}[0-9]{7}/;
+
+        console.log(phone.test(6789245663))
+        console.log(phone.test(9678245663))
+        console.log(phone.test(5789245663))
+
+        let phone2= /[6-9]{3}-[0-9]{4}-[0-9]{3}/;
+
+        console.log(phone2.test("789-4562-234"));
+        console.log(phone2.test("678-4562-234"));
+        console.log(phone2.test("608-4562-234"));
+
+        let password= /[A-Z]{1}[a-z]{7}[@]/
+
+        console.log(password.test("Abhishek@"))
+    </script>
+</body>
+</html>

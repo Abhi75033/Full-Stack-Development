@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <button id="btn">00:00</button> 
+   <button onclick="start()"></button>
+   <button>Stop</button>
+
+  <script>
+    let interval=null;
+        let count=0;
+        const btn= document.getElementById('btn');
+        function start(){
+            setInterval(function(){
+                count++;
+                if(count<60){
+                    btn.textContent='00:'+((count<10)?'0'+count:count);
+                }else{
+                    let min= Math.floor(count/60);
+                    let sec= count- (60*min);
+                    btn.textContent=(min>9?min:'0'+min)+":"+(sec>9?sec:'0'+sec);
+                }
+  </script>
+</body>
+</html>

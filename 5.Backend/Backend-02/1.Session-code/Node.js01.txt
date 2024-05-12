@@ -1,0 +1,100 @@
+Node
+-------
+Platform/ runtime environment which running on Google Chromes V8 engine.
+
+Where we can run JS code without taking  help of any HTML embedding.
+
+REPL
+----------
+Reap Evaluate Print loop
+
+means read the statements one by one and evaluate it and print the same and loop until it reaches at last statement.
+
+To open REPL
+>open CMD
+>execute node command in browser and then you are inside your node terminal (REPL)
+>type some execution statement like as below
+
+>'Hello World'
+>6*7
+>console.log('Hello')
+>function test(){return 'Welcome'}
+>test()
+
+This will execute abobve lines one by one to execute more than one line together create .js file
+
+>open folder in VS Code
+>create first.js file
+	add some simple JS code
+run click on terminal > click on new terminal from dropdown change from powershell to CMD and then run command
+>node first.js
+
+you can see output in the console
+================================================================================
+
+Package.json file
+
+its a heart of your JS project.
+when you start creating any project first of all create package.json file which inscludes files configuration details like name, description, version, author, license and details about all installed dependencies in your project.
+
+How to create Package.json file?
+execute command
+>npm init
+
+In will popup with some few questions enter details and it will create package.json file.
+
+If you don't want to create manual json file but you want with default data then just execute below command
+>npm init -y
+
+(-y mean with Yes flag to create Default package.json file)
+
+====================================================================
+Package
+-----------------
+node provides diffrent types packages (libraries) which we can use to implement some already available functionalities.
+
+Inbuilt Package(http,fs,os,url,path etc..): no need to install comes with Node Js
+Local Package: which we will create and we will use.
+Third Party Packages: which we install for usage like mysql,express, mongoose
+
+How to manage this third party packages installed?
+to manage we can use NPM (node package manager) using that we can manage instalation and uninstallion of packages locally and globally.
+
+let's understand the installation Process.
+
+we can install any package by execution 
+>npm install package-name or npm i package-name
+
+eg. npm install express or npm i express
+
+when this express is getting install it will update package.json file and your can the downloaded package name in package.json file.
+
+Also, it will create folder named node_modules where all the packages getting downloaded
+and also it will create package_lock.json file where it will show the exact location from where the library downloaded.
+
+>npm i nodemon
+
+check the updated package.json file
+
+Also, if you want to see the available package.
+>npm ls
+
+for package installing globally then use -g flag
+
+>npm i typescript -g
+
+Once it is installed you can check using
+
+>npm ls -g
+
+Uninstall how to?
+
+>npm uninstall express
+>npm uninstall nodemon
+
+How to uninstall globally installed package?
+>npm uninstall typescript -g
+
+check using ls command
+>npm ls  (you can also check package.json file)
+>npm ls -g
