@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useState } from "react";
 
 function Register() {
@@ -20,13 +21,21 @@ function Register() {
 
         return errors;
     }
-    const handlesubmit = (e)=>{
+    const handlesubmit = async (e)=>{
         e.preventDefault()
         const errors = validateform();
         if (Object.keys(errors).length==0) {
             setvalidateError({})
-            alert('Form-submitted for approval')
-            console.log(user);
+            try {
+                const resp = await axios.post('http://localhost:5000/api/user/ragister',user)
+                if (resp.status===201) {
+                    alert('form submitted')
+                }else{
+                    alert(resp.data.message)
+                }
+            } catch (error) {
+                console.log(error.message);
+            }
         }
         else{
             setvalidateError(errors)

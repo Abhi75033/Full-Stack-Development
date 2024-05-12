@@ -1,12 +1,16 @@
 const express = require('express');
 const router = express.Router();
-const usermodel = require('../models/user.model');
+const usermodel = require('../modals/user.model');
 
-router.post('/',async (req, res) => {
+router.post('/ragister',async (req, res) => {
     try {
         const { name, email, username, password } = req.body; //object destructure
         if(!name || !email || !username || !password){
           return res.status(400).send({message:'All fields are mandatory'})
+        }
+        const Existeduser = await usermodel.findOne({email})
+        if (Existeduser) {
+            return res.json({message:'user already exist'})
         }
         const newUser= new usermodel({name, email, username, password});
         const resp=await newUser.save();
