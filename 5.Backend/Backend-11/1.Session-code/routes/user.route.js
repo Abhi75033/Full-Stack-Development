@@ -10,7 +10,7 @@ router.post('/ragister',async (req, res) => {
         }
         const Existeduser = await usermodel.findOne({email})
         if (Existeduser) {
-            return res.json({message:'user already exist'})
+            return res.json({message:'user already exist with same email'})
         }
         const newUser= new usermodel({name, email, username, password});
         const resp=await newUser.save();

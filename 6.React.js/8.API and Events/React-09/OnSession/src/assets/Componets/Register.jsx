@@ -21,20 +21,24 @@ function Register() {
 
         return errors;
     }
+    let resp
     const handlesubmit = async (e)=>{
         e.preventDefault()
         const errors = validateform();
         if (Object.keys(errors).length==0) {
             setvalidateError({})
             try {
-                const resp = await axios.post('http://localhost:5000/api/user/ragister',user)
+                 resp = await axios.post('http://localhost:3000/api/auth/register',user)
                 if (resp.status===201) {
-                    alert('form submitted')
-                }else{
                     alert(resp.data.message)
-                }
+                    
+            }else{
+                console.log(errors
+                    
+                );
+            }
             } catch (error) {
-                console.log(error.message);
+                 console.log(resp);
             }
         }
         else{
@@ -64,7 +68,7 @@ function Register() {
         onChange={(e)=>Setuser({...user, email: e.target.value})}/>
         {
             validateError.email && <div className="invalid-feedback">
-                Name is required
+                {validateError.email}
             </div>
         }
         </div>
@@ -81,7 +85,7 @@ function Register() {
         </div>
         <div className={`form-group mt-3 ${validateError.name ? 'has-error':''}`}>
         <label className="mt-2">Password</label>
-        <input type="text" placeholder="@example:Alex" 
+        <input type="password" placeholder="@example:Alex" 
         className={`form-control ${validateError.password?'is-invalid':''}`}
         onChange={(e)=>Setuser({...user, password: e.target.value})}/>
         {
