@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 function Register() {
     const [user, Setuser]=useState({name:'',email:'',username:'',password:''})
@@ -30,15 +31,11 @@ function Register() {
             try {
                  resp = await axios.post('http://localhost:3000/api/auth/register',user)
                 if (resp.status===201) {
-                    alert(resp.data.message)
+                    toast.success(resp.data.message)
                     
-            }else{
-                console.log(errors
-                    
-                );
             }
             } catch (error) {
-                 console.log(resp);
+                 toast.error(error.response.data.message);
             }
         }
         else{
